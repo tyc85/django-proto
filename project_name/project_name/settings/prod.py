@@ -29,11 +29,11 @@ ALLOWED_HOSTS = []
 
 
 ########## CACHE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#caches
+# See: https://docs.djangoproject.com/en/1.7/ref/settings/#caches
 ########## END CACHE CONFIGURATION
 
 
 ########## SECRET CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
+# See: https://docs.djangoproject.com/en/1.7/ref/settings/#secret-key
 SECRET_KEY = get_env_setting('SECRET_KEY')
 ########## END SECRET CONFIGURATION

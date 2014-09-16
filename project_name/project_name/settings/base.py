@@ -30,27 +30,27 @@ SITE_NAME = basename(DJANGO_ROOT)
 
 
 ########## MEDIA CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#media-root
+# See: https://docs.djangoproject.com/en/1.7/ref/settings/#media-root
 MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#media-url
+# See: https://docs.djangoproject.com/en/1.7/ref/settings/#media-url
 MEDIA_URL = '/media/'
 ########## END MEDIA CONFIGURATION
 
 
 ########## STATIC FILE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
+# See: https://docs.djangoproject.com/en/1.7/ref/settings/#static-root
 STATIC_ROOT = normpath(join(SITE_ROOT, 'assets'))
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
+# See: https://docs.djangoproject.com/en/1.7/ref/settings/#static-url
 STATIC_URL = '/static/'
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
+# See: https://docs.djangoproject.com/en/1.7/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
     normpath(join(SITE_ROOT, 'static')),
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
+# See: https://docs.djangoproject.com/en/1.7/ref/contrib/staticfiles/#staticfiles-finders
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',

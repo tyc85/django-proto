@@ -8,16 +8,16 @@ from .base import *
 
 
 ########## DEBUG CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#debug
+# See: https://docs.djangoproject.com/en/1.7/ref/settings/#debug
 DEBUG = True
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-debug
+# See: https://docs.djangoproject.com/en/1.7/ref/settings/#template-debug
 TEMPLATE_DEBUG = DEBUG
 ########## END DEBUG CONFIGURATION
 
 
 ########## EMAIL CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
+# See: https://docs.djangoproject.com/en/dev/1.7/settings/#email-backend
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ########## END EMAIL CONFIGURATION
 
@@ -25,7 +25,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 ########## DATABASE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
+# See: https://docs.djangoproject.com/en/dev/1.7/settings/#databases
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
