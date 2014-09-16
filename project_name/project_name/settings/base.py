@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Django settings for megadeth project.
+Django settings for {{ project_name }}  project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
