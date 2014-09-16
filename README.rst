@@ -14,14 +14,21 @@ Features
 Usage
 --------------------------
 
-mkvirtualenv project_name
+Name your project first::
 
-pip install django
+    mkvirtualenv project_name
+
+Install django::
+
+    pip install django
 
 
+To create the project, run the following command:::
 '''
 django-admin.py startproject --template=https://github.com/privgrey/django-prototype/archive/master.zip --extension=py,rst,html project_name
 '''
+
+
 Set Environment Variable
 
 if you are developing locally
