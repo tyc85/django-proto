@@ -23,7 +23,7 @@ Install django::
     pip install django
 
 
-To create the project, run the following command:::
+To create the project, run the following command::
 
 django-admin.py startproject --template=https://github.com/privgrey/django-prototype/archive/master.zip --extension=py,rst,html project_name
 
