@@ -19,7 +19,13 @@ pip install django
 
 Set Environment Variable
 
-export DJANGO_SETTINGS_MODULE=project_name.settings.local
+if you are developing locally
+cp settings/base.py settings/dev_yourname.py
+
+
+export DJANGO_SETTINGS_MODULE=project_name.settings.environment_type
+
+
 
 Add custom environment variables to your postactivate script
 
