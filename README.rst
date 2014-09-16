@@ -14,9 +14,9 @@ Features
 mkvirtualenv project_name
 
 pip install django
-
-    django-admin.py startproject --template=https://github.com/privgrey/django-prototype/archive/master.zip --extension=py,rst,html project_name
-
+'''
+django-admin.py startproject --template=https://github.com/privgrey/django-prototype/archive/master.zip --extension=py,rst,html project_name
+'''
 Set Environment Variable
 
 if you are developing locally
