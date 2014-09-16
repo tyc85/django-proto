@@ -1,0 +1,13 @@
+# Django
+Django==1.7
+
+#Forms
+django-braces==1.4.0
+
+#Models
+django-model-utils==2.2
+
+#For the persistance stores
+psycopg2==2.5.4
+
+#Cumsom requirements for this project
