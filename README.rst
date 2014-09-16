@@ -29,16 +29,15 @@ To create the project, run the following command::
 
 
 Set Environment Variable
+--------------------------
 
-if you are developing locally
-cp settings/base.py settings/dev_yourname.py
-
+If you are developing locally
+cp settings/local.py settings/dev_yourname.py
 
 export DJANGO_SETTINGS_MODULE=project_name.settings.environment_type
 
-
-
 Add custom environment variables to your postactivate script
+--------------------------
 
 # an example of setting environment variables for a django project to your virtual env
 cat >> ~/.virtualenvs/project_name/bin/postactivate
