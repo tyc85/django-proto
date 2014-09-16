@@ -100,8 +100,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'megadeth.urls'
-WSGI_APPLICATION = 'megadeth.wsgi.application'
+ROOT_URLCONF = '{{ project_name }}.urls'
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 
 # Database
