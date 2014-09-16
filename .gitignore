@@ -12,6 +12,12 @@ build
 .project
 .pydevproject
 .settings
+
+
+#Wing IDE
+.wpr
+.wpu
+
 # Linux Editors
 *~
 \#*\#
