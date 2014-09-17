@@ -35,7 +35,7 @@ If you are one of the developement member,
 
 Set Environment Variable
 --------------------------
-Set Django settings file before bootstraping
+Set Django settings file before bootstraping::
 
     export DJANGO_SETTINGS_MODULE=project_name.settings.environment_type
 
@@ -44,4 +44,4 @@ Add custom environment variables to your postactivate script
 
 Edit your virtualenvs/bin/postactivate::
 
-    export DJANGO_SETTINGS_MODULE="project.settings"
+    export DJANGO_SETTINGS_MODULE="project_name.settings.environment_type"
