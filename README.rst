@@ -33,7 +33,7 @@ To create the project, run the following command::
 If you are one of the developement member, 
     cp settings/local.py settings/dev_yourname.py
 
-Set Environment Variable
+Set Environment Variable::
 --------------------------
 
     export DJANGO_SETTINGS_MODULE=project_name.settings.environment_type
@@ -41,6 +41,6 @@ Set Environment Variable
 Add custom environment variables to your postactivate script
 --------------------------
 
-Edit your virtualenvs/bin/postactivate
+Edit your virtualenvs/bin/postactivate::
 
     export DJANGO_SETTINGS_MODULE="project.settings"
