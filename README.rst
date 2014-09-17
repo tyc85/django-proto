@@ -33,8 +33,9 @@ To create the project, run the following command::
 If you are one of the developement member, 
     cp settings/local.py settings/dev_yourname.py
 
-Set Environment Variable::
+Set Environment Variable
 --------------------------
+Set Django settings file before bootstraping
 
     export DJANGO_SETTINGS_MODULE=project_name.settings.environment_type
 
