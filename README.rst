@@ -44,4 +44,4 @@ Add custom environment variables to your postactivate script
 
 Edit your virtualenvs/bin/postactivate::
 
-    export DJANGO_SETTINGS_MODULE="project_name.settings.environment_type"
+    export DJANGO_SETTINGS_MODULE=project_name.settings.environment_type
