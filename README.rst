@@ -36,7 +36,7 @@ Set Environment Variable
 --------------------------
 Set Django settings file before bootstraping::
 
-    export DJANGO_SETTINGS_MODULE=project_name.settings.environment_type
+    export DJANGO_SETTINGS_MODULE=project_name.settings.dev
 
 Add custom environment variables to your postactivate script
 --------------------------
