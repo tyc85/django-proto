@@ -17,7 +17,7 @@ Name your project first::
 
     mkvirtualenv project_name
 
-Install Python packages, Enter the 'requirement' folder::
+Install Python packages, Enter the 'requirements' folder::
 
     pip install -r base.txt
 
@@ -27,10 +27,6 @@ To create the project, run the following command::
     django-admin.py startproject --template=https://github.com/privgrey/django-proto/archive/master.zip --extension=py,rst,html project_name
 
 
-
-
-If you are one of the developement member, 
-    cp settings/local.py settings/dev_yourname.py
 
 Set Environment Variable
 --------------------------
