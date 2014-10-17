@@ -17,9 +17,9 @@ Name your project first::
 
     mkvirtualenv project_name
 
-Install Python packages, Enter the 'requirements' folder::
+Install Django::
 
-    pip install -r base.txt
+    pip install django
 
 
 To create the project, run the following command::
@@ -40,6 +40,11 @@ Add custom environment variables to your postactivate script
 Edit your virtualenvs/bin/postactivate::
 
     export DJANGO_SETTINGS_MODULE=project_name.settings.dev
+    
+    
+Install Python packages, Enter the 'requirements' folder::
+
+    pip install -r base.txt
     
 Setup the postgresql database
 --------------------------
