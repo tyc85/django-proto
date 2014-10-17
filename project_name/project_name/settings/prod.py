@@ -18,6 +18,8 @@ def get_env_setting(setting):
         error_msg = "Set the %s env variable" % setting
         raise ImproperlyConfigured(error_msg)
 
+DEBUG = False
+
 ########## HOST CONFIGURATION
 ALLOWED_HOSTS = []
 ########## END HOST CONFIGURATION
