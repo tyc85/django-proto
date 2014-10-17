@@ -9,7 +9,6 @@ Features
 * AngularJS_
 
 .. _Bootstrap: https://github.com/twbs/bootstrap
-.. _AngularJS: https://github.com/angular/angular.js
 
 Usage
 --------------------------
