@@ -9,6 +9,11 @@ build
 # Logs:
 *.log
 /logs
+/assets
+
+# Socket:
+*.sock
+
 # Eclipse
 .project
 .pydevproject
