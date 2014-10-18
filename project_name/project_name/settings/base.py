@@ -57,6 +57,10 @@ STATICFILES_FINDERS = (
 )
 ########## END STATIC FILE CONFIGURATION
 
+##### TEMPLATE FILE CONFIGURATION
+TEMPLATE_DIRS = (
+    normpath(join(SITE_ROOT, 'templates')),
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
