@@ -6,10 +6,9 @@ Features
 
 * For Django 1.7
 * Twitter Bootstrap_ 3
-* AngularJS_
+
 
 .. _Bootstrap: https://github.com/twbs/bootstrap
-.. _AngularJS: https://github.com/angular/angular.js
 
 Usage
 --------------------------
@@ -18,7 +17,7 @@ Name your project first::
 
     mkvirtualenv project_name
 
-Install django::
+Install Django::
 
     pip install django
 
@@ -29,19 +28,30 @@ To create the project, run the following command::
 
 
 
-
-If you are one of the developement member, 
-    cp settings/local.py settings/dev_yourname.py
-
 Set Environment Variable
 --------------------------
 Set Django settings file before bootstraping::
 
-    export DJANGO_SETTINGS_MODULE=project_name.settings.environment_type
+    export DJANGO_SETTINGS_MODULE=project_name.settings.dev
 
 Add custom environment variables to your postactivate script
 --------------------------
 
 Edit your virtualenvs/bin/postactivate::
 
-    export DJANGO_SETTINGS_MODULE=project_name.settings.environment_type
+    export DJANGO_SETTINGS_MODULE=project_name.settings.dev
+    
+    
+Install Python packages, Enter the 'requirements' folder::
+
+    pip install -r base.txt
+    
+Setup the postgresql database
+--------------------------
+
+After Setting up settings/dev.py::
+
+    sudo su - postgres
+    createuser -P
+    createdb --owner user dbname
+    logout
