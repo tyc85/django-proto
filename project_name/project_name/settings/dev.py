@@ -41,6 +41,6 @@ DATABASES = {
 
 }
 
-DATABASE_ROUTERS = ['appname.router.AppRouter',]
+#DATABASE_ROUTERS = ['appname.router.AppRouter',]
 
 ########## END DATABASE CONFIGURATION
