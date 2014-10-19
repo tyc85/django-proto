@@ -10,9 +10,8 @@ from .base import *
 ########## DEBUG CONFIGURATION
 # See: https://docs.djangoproject.com/en/1.7/ref/settings/#debug
 DEBUG = True
-
 # See: https://docs.djangoproject.com/en/1.7/ref/settings/#template-debug
-TEMPLATE_DEBUG = DEBUG
+TEMPLATE_DEBUG = True
 ########## END DEBUG CONFIGURATION
 
 
