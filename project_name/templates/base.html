@@ -1,4 +1,5 @@
 <!doctype html>
+{% templatetag openblock %} load staticfiles {% templatetag closeblock %}
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -6,11 +7,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        {% load staticfiles %}
 
-        <link rel="stylesheet" href="{% static 'default.css'%}">
-        <script src="{% static 'modernizr-2.8.3.min.js' %}"></script>
+        <link rel="stylesheet" href="{% templatetag openblock %} static 'default.css' {% templatetag closeblock %}">
+        <script src="{% templatetag openblock %} static 'modernizr-2.8.3.min.js' {% templatetag closeblock %}"></script>
 
     </head>
     <body>
