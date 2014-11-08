@@ -1,12 +1,11 @@
-{% extends "base.html" %}
+{% templatetag openblock %} extends "base.html" {% templatetag closeblock %}
 
-  {% block description %}
+  {% templatetag openblock %} block description {% templatetag closeblock %}
   <h1 class="page-header">DJANGO MEGA</h1>
   <p class="lead">testing templates</p>
-  {% endblock description %}
-        
-  
-   {% block content %}
-   <h3>Title</h3>
-   <p>Staring point of django project</p>
-   {% endblock content %}
+  {% templatetag openblock %} endblock description {% templatetag closeblock %}
+
+  {% templatetag openblock %} block content {% templatetag closeblock %}
+  <h3>Title</h3>
+  <p>Staring point of django project</p>
+  {% templatetag openblock %} endblock content {% templatetag closeblock %}
