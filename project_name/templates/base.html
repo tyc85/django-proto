@@ -23,8 +23,15 @@
         </nav>
 
         <div class="container bs-docs-container">
+          {% templatetag openblock %} block description {% templatetag closeblock %}
           <h1 class="page-header">DJANGO APPNAME</h1>
           <p class="lead">Do one thing and do is well. This app is for ...</p>
+          {% templatetag openblock %} endblock description {% templatetag closeblock %}
+
+          {% templatetag openblock %} block content {% templatetag closeblock %}
+           <h3>Title</h3>>
+           <p>Use this document as a way to quick start any new project.</p>
+          {% templatetag openblock %} endblock content {% templatetag closeblock %}
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
