@@ -19,6 +19,7 @@ def get_env_setting(setting):
         raise ImproperlyConfigured(error_msg)
 
 DEBUG = False
+TEMPLATE_DEBIG=False
 
 ########## HOST CONFIGURATION
 ALLOWED_HOSTS = []
@@ -27,6 +28,21 @@ ALLOWED_HOSTS = []
 ########## EMAIL CONFIGURATION
 
 ########## DATABASE CONFIGURATION
+'''
+
+DB_PW = get_env_setting('DB_PW')
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbname',
+        'USER': 'username',
+        'PASSWORD': DB_PW,
+        'HOST': '127.0.0.1',
+
+    },
+
+'''
 ########## END DATABASE CONFIGURATION
 
 
