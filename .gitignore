@@ -21,8 +21,8 @@ build
 
 
 #Wing IDE
-.wpr
-.wpu
+*.wpr
+*.wpu
 
 # Linux Editors
 *~
