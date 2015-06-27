@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+import os
 
 """
 Django settings for {{ project_name }} project.
@@ -10,28 +10,26 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# Build paths inside the project like this: os.path.os.path.join(BASE_DIR, ...)
 
 ######### PATH CONFIGURATION
 
 
-from os.path import join, abspath, dirname, basename, normpath
-
 ########## PATH CONFIGURATION
 # Absolute filesystem path to the Django project directory:
-DJANGO_ROOT = dirname(dirname(abspath(__file__)))
+DJANGO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Absolute filesystem path to the top-level project folder:
-SITE_ROOT = dirname(DJANGO_ROOT)
+SITE_ROOT = os.path.dirname(DJANGO_ROOT)
 
 # Site name:
-SITE_NAME = basename(DJANGO_ROOT)
+SITE_NAME = os.path.basename(DJANGO_ROOT)
 
 
 
 ########## MEDIA CONFIGURATION
 # See: https://docs.djangoproject.com/en/1.7/ref/settings/#media-root
-MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
+MEDIA_ROOT = os.path.normpath(os.path.join(SITE_ROOT, 'media'))
 
 # See: https://docs.djangoproject.com/en/1.7/ref/settings/#media-url
 MEDIA_URL = '/media/'
@@ -40,14 +38,14 @@ MEDIA_URL = '/media/'
 
 ########## STATIC FILE CONFIGURATION
 # See: https://docs.djangoproject.com/en/1.7/ref/settings/#static-root
-STATIC_ROOT = normpath(join(SITE_ROOT, 'assets'))
+STATIC_ROOT = os.path.normpath(os.path.join(SITE_ROOT, 'assets'))
 
 # See: https://docs.djangoproject.com/en/1.7/ref/settings/#static-url
 STATIC_URL = '/static/'
 
 # See: https://docs.djangoproject.com/en/1.7/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
-    normpath(join(SITE_ROOT, 'static')),
+    os.path.normpath(os.path.join(SITE_ROOT, 'static')),
 )
 
 # See: https://docs.djangoproject.com/en/1.7/ref/contrib/staticfiles/#staticfiles-finders
@@ -59,7 +57,7 @@ STATICFILES_FINDERS = (
 
 ##### TEMPLATE FILE CONFIGURATION
 TEMPLATE_DIRS = (
-    normpath(join(SITE_ROOT, 'templates')),
+    os.path.normpath(os.path.join(SITE_ROOT, 'templates')),
 )
 
 # Quick-start development settings - unsuitable for production
